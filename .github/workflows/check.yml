@@ -1,0 +1,27 @@
+name: check
+
+# Runs the tests (scripted model, no API key) and regenerates the paper's tables from the
+# committed logs, failing if they differ from the committed copies. No LLM is called.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.lock
+      - run: python -m pip install -e .
+      - run: python -m pytest -q
+      - run: python scripts/extended_tables.py > extended.new.md
+      - run: diff extended.new.md runs/extended.md
+      - run: python -m ioulab.experiments.analysis runs/main.jsonl
+      - run: git diff --exit-code runs/

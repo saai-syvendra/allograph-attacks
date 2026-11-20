@@ -1,0 +1,32 @@
+[project]
+name = "ioulab"
+version = "1.0.0"
+description = "Testbed and experiment harness for allograph attacks on shared LLM-agent platforms"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = [
+  "langgraph==1.2.17",
+  "mcp==2.3.0",
+  "a2a-sdk[http-server]==1.2.3",
+  "deepagents==0.7.32",
+  "langchain==1.4.7",
+  "langchain-anthropic==1.7.6",
+  "langchain-openai==1.7.2",
+  "uvicorn>=0.30",
+  "httpx>=0.27",
+  "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+# Only needed to rerun the Gemini agent and Gemini detector families; the tests
+# and every Anthropic run work without it.
+gemini = ["langchain-google-genai==4.4.2"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ioulab*"]
+

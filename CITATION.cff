@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: >-
+  If you use allograph-attacks, please cite this release. The code is licensed
+  MIT; the run logs in runs/ and the builder table in docs/ are licensed CC BY 4.0.
+type: software
+title: "allograph-attacks: testbed, run logs and builder table for allograph attacks on shared agent platforms"
+abstract: >-
+  A synthetic shared agent platform, an experiment harness, the logs of every
+  reported run and the table from a review of eight shared agent
+  builders. An allograph attack is a line that a co-author adds to a shared
+  agent workflow and that runs with the permissions of whoever starts the
+  workflow. The artifact accompanies the paper "Your Keys, Their Words:
+  Allograph Attacks on Shared Agent Platforms".
+authors:
+  - family-names: Syvendra
+    given-names: Saai
+    affiliation: University of Moratuwa
+    orcid: "https://orcid.org/0009-0001-2914-2358"
+  - family-names: Samarakoon
+    given-names: Himath
+    affiliation: University of Moratuwa
+version: "1.0.0"
+date-released: 2026-11-20
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/saai-syvendra/allograph-attacks"
+keywords:
+  - LLM agents
+  - agent platforms
+  - prompt injection
+  - authorization
+  - provenance
+  - multi-user workflows

@@ -1,0 +1,35 @@
+{
+  "title": "allograph-attacks: testbed, run logs and builder table for allograph attacks on shared agent platforms",
+  "upload_type": "software",
+  "description": "<p>Artifact for the paper <em>Your Keys, Their Words: Allograph Attacks on Shared Agent Platforms</em>.</p><p>An allograph attack is a line that a co-author adds to a shared agent workflow and that runs with the permissions of whoever starts the workflow. This artifact contains a synthetic shared agent platform and its experiment harness, the raw logs and summary tables of every reported run, a script that regenerates the paper's tables from the logs without an API key, and the table of eight shared agent builders with its sources.</p><p>The code is licensed under the MIT License. The run logs and the builder table are licensed under CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Syvendra, Saai",
+      "affiliation": "University of Moratuwa",
+      "orcid": "0009-0001-2914-2358"
+    },
+    {
+      "name": "Samarakoon, Himath",
+      "affiliation": "University of Moratuwa"
+    }
+  ],
+  "keywords": [
+    "LLM agents",
+    "agent platforms",
+    "prompt injection",
+    "authorization",
+    "provenance",
+    "multi-user workflows"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/saai-syvendra/allograph-attacks",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Code (ioulab/, scripts/, tests/) is licensed MIT (LICENSE). The run logs (runs/) and the builder table (docs/) are licensed CC BY 4.0 (LICENSE-DATA)."
+}

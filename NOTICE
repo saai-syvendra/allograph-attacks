@@ -1,0 +1,9 @@
+allograph-attacks
+Copyright 2026 Saai Syvendra and Himath Samarakoon (University of Moratuwa).
+
+Code (ioulab/, scripts/, tests/) is licensed under the MIT License (LICENSE). The run logs in runs/
+and the builder table in docs/ are licensed under CC BY 4.0 (LICENSE-DATA).
+
+The builder table describes the documented defaults of eight shared agent builders, read from the
+open-source builders' code at pinned commits and from the commercial vendors' public documentation
+as of 11 November 2026. No vendor code or documentation is redistributed; each cell links its source.

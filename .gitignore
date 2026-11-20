@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+# local outputs of new runs
+runs/*-shard*
+runs/*.log
+runs/*.PAUSE
+runs/*.csv
+runs/scripted*
+extended.new.md
